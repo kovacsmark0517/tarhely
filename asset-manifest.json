@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tarhely/static/css/main.0e8fe3cc.css",
-    "main.js": "/tarhely/static/js/main.2de0de87.js",
+    "main.css": "/tarhely/static/css/main.bd097aa2.css",
+    "main.js": "/tarhely/static/js/main.7b2d2d01.js",
     "static/js/453.abc4a0cc.chunk.js": "/tarhely/static/js/453.abc4a0cc.chunk.js",
     "index.html": "/tarhely/index.html",
-    "main.0e8fe3cc.css.map": "/tarhely/static/css/main.0e8fe3cc.css.map",
-    "main.2de0de87.js.map": "/tarhely/static/js/main.2de0de87.js.map",
+    "main.bd097aa2.css.map": "/tarhely/static/css/main.bd097aa2.css.map",
+    "main.7b2d2d01.js.map": "/tarhely/static/js/main.7b2d2d01.js.map",
     "453.abc4a0cc.chunk.js.map": "/tarhely/static/js/453.abc4a0cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e8fe3cc.css",
-    "static/js/main.2de0de87.js"
+    "static/css/main.bd097aa2.css",
+    "static/js/main.7b2d2d01.js"
   ]
 }
