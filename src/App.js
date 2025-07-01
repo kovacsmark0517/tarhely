@@ -22,7 +22,7 @@ function App() {
         setRaktartipus(selectedTipus);
 
         // Az elválasztó érték automatikus beállítása
-        if (selectedTipus === 'LF4' || selectedTipus === 'LF1') {
+        if (selectedTipus === 'LF4' || selectedTipus === 'LF1' || selectedTipus === 'E03') {
             setElvalaszto('-');
         } else {
             setElvalaszto('/');
