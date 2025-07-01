@@ -15,14 +15,16 @@ function App() {
     const szamok = Array.from({ length: 31 }, (_, i) => (i + 1).toString()); // ['1', ... '31']
     const emeletSzamok = Array.from({ length: 8 }, (_, i) => (i + 1).toString()); // ['1', ..., '8']
     const helySzamok = Array.from({ length: 4 }, (_, i) => (i + 1).toString()); // ['1', ..., '4']
-    const betuk = Array.from({ length: 15 }, (_, i) => String.fromCharCode(65 + i)); // ['A', ... 'O']
+    // Az oszlopok értékei (1-14)
+    const oszlopSzamok = Array.from({ length: 14 }, (_, i) => (i + 1).toString()); // ['1', ..., '14']
+
 
     // Kezelőfüggvény a raktártípus kiválasztásához
     const handleRaktarTipusChange = (selectedTipus) => {
         setRaktartipus(selectedTipus);
 
         // Az elválasztó érték automatikus beállítása
-        if (selectedTipus === 'LF4' || selectedTipus === 'LF1' || selectedTipus === 'E03') {
+        if (selectedTipus === 'LF4') {
             setElvalaszto('-');
         } else {
             setElvalaszto('/');
@@ -44,7 +46,7 @@ function App() {
             {/* Irányító gombok */}
             <div className="Controls">
                 <h3>Raktártípus kiválasztása:</h3>
-                {['E04', 'LF1', 'LF4', 'E03'].map((tipus) => (
+                {['E04', 'LF4'].map((tipus) => (
                     <button
                         key={tipus}
                         onClick={() => handleRaktarTipusChange(tipus)}
@@ -79,27 +81,11 @@ function App() {
                             {szam.padStart(2, '0')} {/* Gomb feliratának megjelenítése nullázva */}
                         </button>
                     ))}
-                    {betuk.map((betu) => (
-                        <button
-                            key={betu}
-                            onClick={() => setSor(betu)}
-                            style={{
-                                margin: '2px',
-                                padding: '5px 10px',
-                                backgroundColor: sor === betu ? 'lightgreen' : 'white',
-                                border: '1px solid black',
-                                borderRadius: '4px',
-                                cursor: 'pointer',
-                            }}
-                        >
-                            {betu}
-                        </button>
-                    ))}
                 </div>
 
                 <h3>"Oszlop" kiválasztása:</h3>
                 <div>
-                    {szamok.map((szam) => (
+                    {oszlopSzamok.map((szam) => (
                         <button
                             key={szam}
                             onClick={() => setOszlop(szam.padStart(2, '0'))} // Nullával egészítjük ki az értéket, ha szükséges
