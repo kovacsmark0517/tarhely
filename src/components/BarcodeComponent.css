@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center; /* Középre igazítás */
     align-items: center;
-    width: 85vw; /* Maximális szélesség: képernyő 85%-a */
-    max-width: 85%; /* Biztosítjuk, hogy ne lépje túl a 85%-ot */
+    width: 95vw; /* Maximális szélesség: képernyő 85%-a */
+    max-width: 95%; /* Biztosítjuk, hogy ne lépje túl a 85%-ot */
     overflow: hidden; /* Ha túlméretezett, akkor levágjuk */
 }
 
 .Barcode svg {
     width: 100%;
-    max-width: 98%; /* SVG szélesség  */
+    max-width: 95%; /* SVG szélesség  */
     height: auto; /* Magasság automatikusan méretezve */
 }
