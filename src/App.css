@@ -1,3 +1,7 @@
+*{
+  background-color: #3f3f41;
+}
+
 .Container{
   display: flex;
   flex-direction: column;

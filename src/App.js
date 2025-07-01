@@ -53,7 +53,7 @@ function App() {
                         style={{
                             margin: '5px',
                             padding: '5px 10px',
-                            backgroundColor: raktartipus === tipus ? 'lightgreen' : 'white', // Az aktív típus színe
+                            backgroundColor: raktartipus === tipus ? 'whitesmoke' : '#ec671c', // Az aktív típus színe
                             border: '1px solid black',
                             borderRadius: '4px',
                             cursor: 'pointer',
@@ -72,7 +72,7 @@ function App() {
                             style={{
                                 margin: '2px',
                                 padding: '5px 10px',
-                                backgroundColor: sor === szam.padStart(2, '0') ? 'lightgreen' : 'white',
+                                backgroundColor: sor === szam.padStart(2, '0') ? 'whitesmoke' : '#ec671c',
                                 border: '1px solid black',
                                 borderRadius: '4px',
                                 cursor: 'pointer',
@@ -92,7 +92,7 @@ function App() {
                             style={{
                                 margin: '2px',
                                 padding: '5px 10px',
-                                backgroundColor: oszlop === szam.padStart(2, '0') ? 'lightgreen' : 'white',
+                                backgroundColor: oszlop === szam.padStart(2, '0') ? 'whitesmoke' : '#ec671c',
                                 border: '1px solid black',
                                 borderRadius: '4px',
                                 cursor: 'pointer',
@@ -112,7 +112,7 @@ function App() {
                             style={{
                                 margin: '2px',
                                 padding: '5px 10px',
-                                backgroundColor: emelet === szam ? 'lightgreen' : 'white',
+                                backgroundColor: emelet === szam ? 'whitesmoke' : '#ec671c',
                                 border: '1px solid black',
                                 borderRadius: '4px',
                                 cursor: 'pointer',
@@ -132,7 +132,7 @@ function App() {
                             style={{
                                 margin: '2px',
                                 padding: '5px 10px',
-                                backgroundColor: hely === szam ? 'lightgreen' : 'white',
+                                backgroundColor: hely === szam ? 'whitesmoke' : '#ec671c',
                                 border: '1px solid black',
                                 borderRadius: '4px',
                                 cursor: 'pointer',
