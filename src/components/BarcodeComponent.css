@@ -9,6 +9,6 @@
 
 .Barcode svg {
     width: 100%;
-    max-width: 95%; /* SVG szélesség  */
+    max-width: 98%; /* SVG szélesség  */
     height: auto; /* Magasság automatikusan méretezve */
 }
